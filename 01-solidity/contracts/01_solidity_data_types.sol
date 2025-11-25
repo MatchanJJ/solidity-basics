@@ -6,13 +6,14 @@ contract SolidityDataTypes {
     uint256 balance;
     address owner;
     mapping(string => uint256) accounts;
+    uint256 [] numbers;
 
     constructor() {
         balance = 10000;
         owner = msg.sender;
         accounts["theblokc"] = 999999;
 
-        // TODO: print the values above using console.log
+        // TODO: print the values above using console.logs
         console.log("balance is ", balance);
 
         console.log("owner is ", owner);
